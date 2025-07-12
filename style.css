@@ -1,0 +1,204 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #1a1a1a;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #600000; /* Dark red */
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.main-brand {
+  font-size: 48px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#popupBanner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: powderblue;
+  color: black;
+  padding: 12px 20px;
+  text-align: center;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  gap: 10px;
+}
+
+#popupBanner p {
+  margin: 0;
+  flex: 1;
+}
+
+#popupClose {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+
+.marquee-container {
+  background-color: black;
+  color: white;
+  padding: 10px 0;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+
+
+button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: orange;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: yellow;
+}
+
+/* Header */
+header {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.search-bar input {
+  padding: 10px 50px;
+  border-radius: 4px;
+  border: none;
+}
+
+.menu {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.menu a,
+.menu button {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.menu button:hover,
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.toggle {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+
+/* Mobile Menu */
+nav {
+  display: none;
+  flex-direction: column;
+  background-color: #222;
+}
+
+nav a {
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #333;
+}
+
+/* Content Sections */
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h2 {
+  color: #600000;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+p, li {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+ul {
+  list-style-type: circle;
+  padding-left: 0;
+  display: inline-block;
+  text-align: left;
+}
+.apply-button {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.apply-button button {
+  background-color: maroon;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.apply-button button:hover {
+  background-color: darkorange;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+  }
+}
+
+footer {
+  margin-top: 60px;
+  padding: 30px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-size: 0.9em;
+}
